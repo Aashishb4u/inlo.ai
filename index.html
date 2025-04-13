@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Inlo - AI Business Mentor for Coaches, Consultants, and Therapists</title>
+    <meta name="title" content="Inlo - AI Business Mentor for Coaches, Consultants, and Therapists">
+    <meta name="description"
+        content="Inlo is an AI-powered business mentor that helps coaches, consultants, and therapists grow their business with proposals, marketing campaigns, and strategic guidance.">
+    <meta name="keywords"
+        content="business mentor, AI tool, coaches, consultants, therapists, business growth, marketing automation, proposal writing, social media marketing">
+    <meta name="author" content="Inlo, Inc.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Favicon Tags -->
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inlo.xcodie.com/">
+    <meta property="og:title" content="Inlo - Your AI Business Mentor">
+    <meta property="og:description"
+        content="Transform your coaching or consulting business with Inlo - an AI tool that writes proposals, creates marketing campaigns, and provides business mentorship.">
+    <meta property="og:image" content="https://inlo.xcodie.com/assets/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://inlo.xcodie.com/">
+    <meta property="twitter:title" content="Inlo - Your AI Business Mentor">
+    <meta property="twitter:description"
+        content="Transform your coaching or consulting business with Inlo - an AI tool that writes proposals, creates marketing campaigns, and provides business mentorship.">
+    <meta property="twitter:image" content="https://inlo.xcodie.com/assets/images/logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://inlo.xcodie.com/">
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="/assets/css/tailwind.css?r=345839465348569" rel="stylesheet">
+
+    <style>
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .faq-answer.expanded {
+            max-height: 300px;
+            /* Adjust this value based on your content */
+            opacity: 1;
+            margin-top: 1rem;
+        }
+    </style>
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Inlo",
+        "description": "AI-powered business mentor for coaches, consultants, and therapists that helps with proposals, marketing campaigns, and business strategy.",
+        "applicationCategory": "BusinessApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "500",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "100"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "Inlo, Inc.",
+            "url": "https://inlo.ai"
+        }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "What's the difference between Inlo and ChatGPT?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We built Inlo specifically for coaches, consultants, and therapists, unlike general AI tools that serve everyone with generic answers."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's included in the Pro plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Everything including unlimited access to business mentorship tools, social media content writing, email campaigns, launch funnels, sales pages and offline marketing tools."
+            }
+        }]
+    }
+    </script>
+</head>
+
+<body class="font-inter">
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="1000" class="shadow-[0px_4px_49.3px_-1px_#0000001A]">
+        <nav class="container mx-auto px-4 py-4 md:px-10 flex items-center justify-between">
+            <a href="/" class="flex items-center">
+                <img src="assets/images/logo.png" alt="Inlo Logo" class="h-8 sm:h-10 w-auto">
+            </a>
+
+            <div class="flex items-center gap-3 sm:gap-4">
+                <a href="http://54.82.18.200:9001"
+                    class="inline-flex px-4 py-2 sm:px-6 sm:py-2.5 border-[1.3px] border-accent-500 rounded-full text-sm sm:text-base font-medium transition-colors duration-300 hover:bg-accent-500 hover:text-white">
+                    Login
+                </a>
+                <a href="http://54.82.18.200:9001"
+                    class="inline-flex px-4 py-2 sm:px-6 sm:py-2.5 bg-primary-500 text-white rounded-full text-sm sm:text-base font-medium transition-colors duration-300 hover:bg-primary-700">
+                    Get started
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section
+            class="container mx-auto px-5 py-16 md:px-10 text-center min-h-[calc(100vh-100px)] flex flex-col items-center justify-center">
+            <h2 data-aos="fade-down" data-aos-duration="1000" class="text-primary-900 font-medium md:text-xl text-base">
+                For Coaches, Consultants, and Therapists Only
+            </h2>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                class="text-accent-500 md:text-4xl font-semibold mt-5 md:leading-14 md:[word-spacing:2px] tracking-wide text-3xl">
+                Unlock Your Business Potential.
+                <br class="hidden md:block" />
+                Without an Expensive Team.
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+                class="text-accent-500 max-w-3xl mx-auto mt-5">
+                Ingenious AI Tool that acts like your business mentor–drafts proposals, writes online marketing
+                campaigns and social media campaigns– so you can focus on what truly matters: changing lives.
+            </p>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="max-w-xl mx-auto mt-8">
+                <div
+                    class="flex flex-wrap w-full border border-secondary-100 rounded-lg bg-white focus-within:ring-2 focus-within:ring-primary-500 transition-all duration-300 px-2 md:px-0 pb-2 md:pb-0">
+                    <div class="flex items-center flex-1 md:px-4">
+                        <img src="assets/images/mail.svg" alt="Email icon" class="w-5 h-5 text-secondary-300">
+                        <input type="email" id="emailInput" placeholder="Enter email address"
+                            class="w-full px-3 py-3 text-accent-500 placeholder:text-secondary-500 focus:outline-none transition-colors duration-300">
+                    </div>
+                    <a href="#" onclick="validateAndSubmit(event)"
+                        class="px-6 py-3 m-1 text-sm font-medium text-white transition-colors duration-300 bg-primary-500 rounded-md hover:bg-primary-700 whitespace-nowrap shadow-[0px_4px_4px_0px_#00000040] md:w-fit w-full cursor-pointer">
+                        Get Started
+                    </a>
+                </div>
+                <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address</p>
+            </div>
+        </section>
+
+
+        <!-- Features -->
+        <section class="bg-[#FAFAFA] py-20">
+            <div class="container mx-auto px-5 md:px-20">
+                <!-- Section Header -->
+                <h2 data-aos="fade-in" data-aos-duration="1500"
+                    class="text-primary-900 md:text-4xl text-3xl text-center font-semibold mb-8">
+                    Features
+                </h2>
+
+                <!-- Tabs -->
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="flex md:flex-row flex-col gap-y-2 justify-center mb-8 items-center">
+                    <button data-tab="business-mentor"
+                        class="tab-button text-accent-500 border-b-2 border-primary-500 pb-2 font-medium transition-colors duration-300 px-5 cursor-pointer w-fit active">
+                        Business Mentor
+                    </button>
+                    <button data-tab="social-media"
+                        class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
+                        Social Media Marketing
+                    </button>
+                    <button data-tab="online-marketing"
+                        class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
+                        Online Marketing
+                    </button>
+                </div>
+
+                <!-- Business Mentor Tab Content -->
+                <div id="business-mentor"
+                    class="tab-content grid md:grid-cols-2 md:gap-12 gap-5 items-center text-accent-500">
+                    <h2 class="text-3xl font-medium md:col-span-2">
+                        Business Mentor
+                    </h2>
+                    <!-- Left Content -->
+                    <div class="space-y-8">
+
+                        <h2 class="text-lg font-semibold text-accent-500 mb-2">
+                            Find Clarity in a Matter of Minutes
+                        </h2>
+                        <p class="tracking-wide [word-spacing:1px]">
+
+                            Stuck wondering what your niche should be? Confused if your pricing makes sense or sounds
+                            like wishful thinking? Just ask Inlo. It gives you frameworks, models, and actual advice
+                            that sounds like it came from your very smart (and slightly sassy) business mentor.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Need mentorship on packages, pricing, and more
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+
+                                    It's like having Ajit on speed dial, but without actually blowing up his phone.
+                                    After a decade of coaching coaches and building multi-million-dollar programs,
+                                    Ajit's wisdom is now built into Inlo. Ask anything, from "Should I offer a VIP day?"
+                                    to "What should I charge?" and get an answer that actually helps.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Write proposals and agreements
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+                                    Looking at that blank screen, wondering where to start writing that proposal, can be
+                                    overwhelming. Let that overwhelm melt away as you share with Inlo what you want to
+                                    achieve, and it writes it for you, like you wrote it yourself (reads creepy, but is
+                                    awesome!)
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Draft package or course outline
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+
+                                    We have written some course outlines. That overwhelm, that innate desire to add
+                                    everything you can–and then some, has made us more projects than we can imagine
+                                    until Inlo. Inlo makes writing course outlines and packages–simple, easy and fast.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="assets/images/BusinessMentor.png"
+                        alt="Business Mentor Feature" class="w-full h-auto ms-auto max-w-[450px]">
+                </div>
+
+                <!-- Social Media Marketing Tab Content -->
+                <div id="social-media"
+                    class="tab-content grid md:grid-cols-2 md:gap-12 gap-5 items-center text-accent-500 hidden">
+                    <h2 class="text-3xl font-medium md:col-span-2">
+                        Social Media Marketing
+                    </h2>
+                    <!-- Left Content -->
+                    <div class="space-y-8">
+
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Posts in your writing style
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+                                    You're witty, insightful, and not at all generic. Your posts should reflect that.
+                                    Inlo learns your writing style and then helps you turn your ideas into posts that
+                                    sound like you (not like a chatbot from 2015)
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Scripts for all channels, in your speaking style
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+                                    Instagram, YouTube, LinkedIn, your audience is everywhere. But your time? Not so
+                                    much. Inlo turns your ideas into ready-to-record scripts that sound like you
+                                    actually said them. Because technically, you did, just with some help.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="assets/images/SocialMediaMarketing.png"
+                        alt="Social Media Marketing Feature" class="w-full h-auto ms-auto max-w-[400px]">
+                </div>
+
+                <!-- Online Marketing Tab Content -->
+                <div id="online-marketing"
+                    class="tab-content grid md:grid-cols-2 md:gap-12 gap-5 items-center text-accent-500 hidden">
+                    <h2 class="text-3xl font-medium md:col-span-2">
+                        Online Marketing
+                    </h2>
+                    <!-- Left Content -->
+                    <div class="space-y-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Complete Launch Campaigns
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+                                    Emails are the worst, until they're not. With Inlo, you get launch emails that sound
+                                    like you, sell like a pro, and don't take hours to write. It's like hiring a
+                                    copywriter who lives in your head. In a good way.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">
+                                    Webinars and Video Sales Letters
+                                </h3>
+                                <p class="tracking-wide [word-spacing:1px]">
+                                    A high-converting webinar script usually costs a small fortune. One that sounds like
+                                    you? Even more. Inlo writes your webinars and sales letters using proven templates
+                                    and your unique voice, so you can sound like yourself and enroll like the pros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <img data-aos="zoom-in" data-aos-duration="1500" src="assets/images/OnlineMarketing.png"
+                        alt="Online Marketing Feature" class="w-full h-auto ms-auto max-w-[400px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- Early Bird Pricing -->
+        <section class="py-20">
+            <div class="container mx-auto px-5 md:px-10">
+                <div class="flex md:flex-row flex-col md:gap-5 gap-8">
+                    <!-- First Column - Heading -->
+                    <div class="space-y-4 md:w-[30%] text-accent-500">
+                        <h2 data-aos="fade-in" data-aos-duration="1500"
+                            class="md:text-5xl text-4xl font-semibold tracking-wide md:w-40">
+                            Early Bird Pricing
+                        </h2>
+                        <p data-aos="fade-up" data-aos-duration="1000"
+                            class="tracking-wide md:[word-spacing:2px] md:text-lg md:mt-8 mt-5">
+                            Sub text here inlo bringing all exclusive perks lorem ipsum lorem ipsum lorem isum.
+                        </p>
+                    </div>
+
+                    <!-- Second Column - Pricing -->
+                    <div data-aos="fade-in" data-aos-duration="1000" class="md:px-5 md:w-[35%]">
+                        <div class="space-y-6">
+                            <div>
+                                <p class="text-base font-medium text-accent-500">
+                                    $500 / <span class="text-sm font-normal">Year ($1.50/day)</span>
+                                </p>
+                                <h3 class="text-3xl font-semibold text-accent-500 flex items-center gap-5 mt-5">
+                                    Pro
+                                    <img src="assets/images/right-arrow.svg" alt="right arrow">
+                                </h3>
+                            </div>
+
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Unlimited access to Business Coach</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Unlimited access to Social Media Marketing</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Unlimited access to Email Marketing</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Unlimited access to Online Sales</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Unlimited access to Offline Marketing Tools</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" alt="Check" class="size-4">
+                                    <span class="text-accent-500">Early access to new features at the same price</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="w-full h-auto" src="assets/images/illustration.webp" alt="illustration">
+                    </div>
+
+                    <!-- Third Column - Form -->
+                    <div data-aos="fade-in" data-aos-duration="1000"
+                        class="bg-accent-500 md:p-8 p-5 pb-0 md:pb-0 rounded-2xl text-white md:w-[35%] flex flex-col justify-between min-h-96">
+                        <div class="space-y-6 h-full">
+                            <h3 class="md:text-4xl text-3xl font-light tracking-wide md:w-36">
+                                Enter email address
+                            </h3>
+
+                            <div class="space-y-4">
+                                <div class="relative flex items-center">
+                                    <img src="assets/images/mail.svg" alt="Email icon" class="absolute left-4 w-5 h-5">
+                                    <input type="email" placeholder="Enter your email"
+                                        class="w-full pl-12 pr-4 py-3 rounded-lg bg-white text-accent-500 placeholder:text-secondary-300 focus:outline-none focus:ring-2 focus:ring-primary-500">
+                                </div>
+                                <a href="http://54.82.18.200:9001"
+                                    class="px-6 py-3 bg-primary-600 text-white rounded-lg font-medium transition-colors duration-300 hover:bg-primary-700 cursor-pointer w-full block text-center">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                        <img class="w-full h-auto" src="assets/images/illustration.webp" alt="illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why did we build it -->
+        <section class="py-20 bg-[#FAFAFA] text-accent-500">
+            <div class="max-w-3xl mx-auto px-5 md:px-10">
+                <h2 data-aos="fade-in" data-aos-duration="1500" class="md:text-4xl text-3xl font-semibold text-center">
+                    Why did we build it ? </h2>
+
+                <p data-aos="fade-up" data-aos-duration="1500"
+                    class="md:mt-10 mt-6 tracking-wide md:[word-spacing:2px]">
+                    Most coaches spend way too much time (and money) trying to build their business. I know, I did.
+
+                </p>
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
+                    class="mt-5 tracking-wide md:[word-spacing:2px]">
+                    Over the past 15 years, I’ve helped businesses make millions, discovering what actually works and
+                    what’s just noise. With Inlo, I’m offering these proven, high-impact models to coaches, consultants,
+                    and therapists—without the expensive price tag. Why should only tech pros have the edge?
+                </p>
+
+                <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                    class="mt-5 tracking-wide md:[word-spacing:2px]">
+                    <strong>
+                        So I built it.
+                    </strong>
+                </p>
+
+
+                <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
+                    class="mt-5 tracking-wide md:[word-spacing:2px]">
+                    Inlo helps you bring clarity to your business, write your marketing campaigns, build out your sales
+                    funnels, and create content that actually sounds like you. It took me 15 years (and a small fortune)
+                    to learn what works. I wish I had Inlo when I was starting. So I made it for you so you don’t have
+                    to waste time or money.
+                </p>
+
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-20 container mx-auto px-4 md:px-10">
+            <h2 data-aos="fade-in" data-aos-duration="1500"
+                class="md:text-4xl text-3xl font-semibold text-center text-accent-500 mb-12">
+                Got Questions?
+            </h2>
+
+            <div class="space-y-4">
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">What's the difference between Inlo and ChatGPT
+                            (or other AI tools)?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Most AI tools try to serve everyone, which is why their answers often sound generic, bland, or
+                        just plain wrong. We built Inlo specifically for coaches, consultants, and therapists. In other
+                        words, for people who are doing the real work of helping others in life, health, and business.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">Do I need to be tech-savvy to use Inlo?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Nope. If you can send a voice note, you're more than qualified. Inlo is built to be simple.
+                        Think: talking to a smart business friend who happens to be great with words.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">Can Inlo really write like me?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Yes. Slightly eerie, totally awesome. Inlo learns your tone and style from a few samples (your
+                        emails, posts, or anything you've already written). Then it starts writing like you, without the
+                        overthinking or perfectionism.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">What can I ask Inlo to help me with?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        From "What should I charge?" to "Write me 5 Instagram posts about burnout," or "Help me build a
+                        launch funnel", Inlo's got you. To get responses from it, though, speak to it. Just press the
+                        speak icon and start talking. Dump your ideas like you dump it to your friend on whatsapp. It
+                        will make sense of it and give you what you were really looking for. Business clarity,
+                        marketing, offers, content… it's your on-call assistant and mentor.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">Is Inlo only for online coaches?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Not at all. Whether you run in-person workshops, 1:1 therapy sessions, group programs, or
+                        consulting gigs—if you help people, Inlo was made for you.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">How does Inlo learn my voice?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Simple. You share a few samples of your writing (posts, emails, website copy, whatever sounds
+                        like you). Inlo studies your vibe, your rhythm, your tone. Then uses it to write everything from
+                        emails to sales pages. It's spooky good. On top of that, if you don't have not written anything
+                        in the past, we give you 6 styles to choose from. These 6 styles are specifically trained to
+                        sound like what is most common ways of writing for coaches, consultants and therapists.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">What if I'm just getting started?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Perfect. We actually built Inlo for people like you. Starting out is overwhelming, we know. Inlo
+                        helps you figure out what to offer, how to price it, what to say, and how to say it. Fast.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">What's included in the Pro plan?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Everything. Unlimited access to:<br>
+                        • Business mentorship tools<br>
+                        • Social media content writing<br>
+                        • Email campaigns and launch funnels<br>
+                        • Sales pages and offline marketing tools<br>
+                        Plus: early access to every new feature we release.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">What happens after I sign up?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        You'll get access to Inlo right away. A quick setup helps Inlo learn your voice and goals and
+                        then you're ready to start. Ask your questions, type your ideas, and Inlo starts building with
+                        you.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">Is it a one-time cost or a subscription?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        It's a yearly subscription: $500/year (which comes out to $1.50/day). For less than the cost of
+                        your daily coffee, you get a marketing assistant, strategist, copywriter, and mentor—on call,
+                        every day.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="1500" class="faq-item border-b border-secondary-100 pb-4">
+                    <button class="w-full flex justify-between items-center outline-none cursor-pointer text-left group"
+                        onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-medium text-accent-500">Can I cancel if it's not for me?</h3>
+                        <img src="assets/images/plus.svg" alt="Toggle"
+                            class="size-10 transition-transform duration-200 group-data-[expanded=true]:rotate-180">
+                    </button>
+                    <p class="text-accent-500 faq-answer">
+                        Yes. No guilt, no games. But honestly? Once you use it, you won't want to build your business
+                        without it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#FAFAFA] text-secondary-500 border-t border-t-secondary-100">
+        <div
+            class="container px-4 py-5 md:px-10 flex md:flex-row flex-col gap-y-3 items-center justify-between mx-auto text-sm">
+            © 2025 Inlo, Inc. All Rights Reserved.
+
+            <ul>
+                <li class="inline-block mr-4">
+                    <a href="#">Terms of
+                        Service</a>
+                </li>
+                <li class="inline-block mr-4">
+                    <a href="#">Privacy
+                        Policy</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </footer>
+
+    <!-- Add these before closing </head> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleFaq(button) {
+            const parent = button.closest('.faq-item');
+            const answer = parent.querySelector('.faq-answer');
+            const icon = button.querySelector('img');
+            const wasExpanded = button.getAttribute('data-expanded') === 'true';
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-item button').forEach(btn => {
+                btn.setAttribute('data-expanded', 'false');
+                btn.closest('.faq-item').querySelector('.faq-answer').classList.remove('expanded');
+                btn.querySelector('img').src = 'assets/images/plus.svg';
+            });
+
+            // Toggle current FAQ
+            if (!wasExpanded) {
+                button.setAttribute('data-expanded', 'true');
+                answer.classList.add('expanded');
+                icon.src = 'assets/images/minus.svg';
+            }
+        }
+
+        // Get all tab buttons and content
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        // Add click event listener to each tab button
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.classList.remove('text-accent-500', 'border-b-2', 'border-accent-500');
+                    btn.classList.add('text-secondary-500', 'border-b', 'border-b-primary-100');
+                });
+
+                // Add active class to clicked button
+                button.classList.add('active');
+                button.classList.remove('text-secondary-500', 'border-b', 'border-b-primary-100');
+                button.classList.add('text-accent-500', 'border-b-2', 'border-primary-500');
+
+                // Hide all tab contents
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+
+                // Show the selected tab content
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+    </script>
+
+    <script>
+        function validateAndSubmit(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('emailInput');
+            const emailError = document.getElementById('emailError');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Reset styles
+            emailInput.style.borderColor = '';
+            emailError.classList.add('hidden');
+
+            if (!emailInput.value) {
+                // Empty email
+                emailInput.style.borderColor = '#EF4444'; // Tailwind red-500
+                emailError.textContent = 'Please enter your email address';
+                emailError.classList.remove('hidden');
+                emailInput.focus();
+                return;
+            }
+
+            if (!emailRegex.test(emailInput.value)) {
+                // Invalid email format
+                emailInput.style.borderColor = '#EF4444';
+                emailError.textContent = 'Please enter a valid email address';
+                emailError.classList.remove('hidden');
+                emailInput.focus();
+                return;
+            }
+
+            // If validation passes, redirect to the signup page
+            window.location.href = 'http://54.82.18.200:9001/';
+        }
+
+        // Add real-time validation
+        document.getElementById('emailInput').addEventListener('input', function () {
+            const emailError = document.getElementById('emailError');
+            this.style.borderColor = '';
+            emailError.classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
