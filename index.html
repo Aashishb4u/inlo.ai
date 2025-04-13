@@ -77,6 +77,19 @@
             opacity: 1;
             margin-top: 1rem;
         }
+
+        /* Hide scrollbar but keep functionality */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari and Opera */
+        }
     </style>
 
     <!-- Structured Data / JSON-LD -->
@@ -218,24 +231,48 @@
 
                 <!-- Tabs -->
                 <div data-aos="fade-up" data-aos-duration="1500"
-                    class="flex md:flex-row flex-col gap-y-2 justify-center mb-8 items-center">
-                    <button data-tab="business-mentor"
-                        class="tab-button text-accent-500 border-b-2 border-primary-500 pb-2 font-medium transition-colors duration-300 px-5 cursor-pointer w-fit active">
-                        Business Mentor
-                    </button>
-                    <button data-tab="content-marketing"
-                        class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
-                        Content Marketing
-                    </button>
-                    <button data-tab="online-marketing"
-                        class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
-                        Online Marketing
-                    </button>
-                    <button data-tab="offline-marketing"
-                        class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
-                        Offline Marketing
-                    </button>
+                    class="md:flex md:flex-row md:justify-center mb-8 md:items-center">
+                    <!-- Mobile scrollable container -->
+                    <div class="flex overflow-x-auto gap-x-3 pb-3 md:hidden hide-scrollbar">
+                        <button data-tab="business-mentor"
+                            class="tab-button bg-accent-500 text-white rounded-full py-2 px-5 font-medium transition-colors duration-300 whitespace-nowrap active">
+                            Business Mentor
+                        </button>
+                        <button data-tab="content-marketing"
+                            class="tab-button bg-secondary-100 text-secondary-500 rounded-full py-2 px-5 font-medium transition-colors duration-300 hover:bg-accent-500 hover:text-white whitespace-nowrap">
+                            Content Marketing
+                        </button>
+                        <button data-tab="online-marketing"
+                            class="tab-button bg-secondary-100 text-secondary-500 rounded-full py-2 px-5 font-medium transition-colors duration-300 hover:bg-accent-500 hover:text-white whitespace-nowrap">
+                            Online Marketing
+                        </button>
+                        <button data-tab="offline-marketing"
+                            class="tab-button bg-secondary-100 text-secondary-500 rounded-full py-2 px-5 font-medium transition-colors duration-300 hover:bg-accent-500 hover:text-white whitespace-nowrap">
+                            Offline Marketing
+                        </button>
+                    </div>
+                    <!-- Desktop tabs -->
+                    <div class="hidden md:flex">
+                        <button data-tab="business-mentor"
+                            class="tab-button text-accent-500 border-b-2 border-primary-500 pb-2 font-medium transition-colors duration-300 px-5 cursor-pointer w-fit active">
+                            Business Mentor
+                        </button>
+                        <button data-tab="content-marketing"
+                            class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
+                            Content Marketing
+                        </button>
+                        <button data-tab="online-marketing"
+                            class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
+                            Online Marketing
+                        </button>
+                        <button data-tab="offline-marketing"
+                            class="tab-button text-secondary-500 pb-2 font-medium transition-colors duration-300 hover:text-accent-500 border-b-primary-100 border-b px-5 cursor-pointer w-fit">
+                            Offline Marketing
+                        </button>
+                    </div>
                 </div>
+
+
 
                 <!-- Business Mentor Tab Content -->
                 <div id="business-mentor"
@@ -498,7 +535,7 @@
 
                     <!-- Third Column - Form -->
                     <div data-aos="fade-in" data-aos-duration="1000"
-                        class="bg-accent-500 md:p-8 p-5 pb-0 md:pb-0 rounded-2xl text-white md:w-[35%] flex flex-col justify-between min-h-96">
+                        class="bg-accent-500 md:p-8 p-5 rounded-2xl text-white md:w-[35%] flex flex-col justify-between md:min-h-96">
                         <div class="space-y-6 h-full">
                             <h3 class="md:text-4xl text-3xl font-light tracking-wide md:w-36">
                                 Enter email address
@@ -996,7 +1033,7 @@
                     </div>
 
                     <div data-aos="fade-in" data-aos-duration="1000"
-                        class="bg-accent-500 md:p-8 p-5 pb-0 md:pb-0 rounded-2xl text-white md:w-[35%] flex flex-col justify-between min-h-96">
+                        class="bg-accent-500 md:p-8 p-5 rounded-2xl text-white md:w-[35%] flex flex-col justify-between md:min-h-96">
                         <div class="space-y-6 h-full">
                             <h3 class="md:text-4xl text-3xl font-light tracking-wide md:w-36">
                                 Enter email address
@@ -1262,17 +1299,29 @@
         // Add click event listener to each tab button
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
+                const isMobile = window.innerWidth < 768; // md breakpoint in Tailwind
+
                 // Remove active class from all buttons
                 tabButtons.forEach(btn => {
                     btn.classList.remove('active');
-                    btn.classList.remove('text-accent-500', 'border-b-2', 'border-accent-500');
-                    btn.classList.add('text-secondary-500', 'border-b', 'border-b-primary-100');
+                    if (isMobile) {
+                        btn.classList.remove('bg-accent-500', 'text-white');
+                        btn.classList.add('bg-secondary-100', 'text-secondary-500');
+                    } else {
+                        btn.classList.remove('text-accent-500', 'border-b-2', 'border-primary-500');
+                        btn.classList.add('text-secondary-500', 'border-b', 'border-b-primary-100');
+                    }
                 });
 
                 // Add active class to clicked button
                 button.classList.add('active');
-                button.classList.remove('text-secondary-500', 'border-b', 'border-b-primary-100');
-                button.classList.add('text-accent-500', 'border-b-2', 'border-primary-500');
+                if (isMobile) {
+                    button.classList.remove('bg-secondary-100', 'text-secondary-500');
+                    button.classList.add('bg-accent-500', 'text-white');
+                } else {
+                    button.classList.remove('text-secondary-500', 'border-b', 'border-b-primary-100');
+                    button.classList.add('text-accent-500', 'border-b-2', 'border-primary-500');
+                }
 
                 // Hide all tab contents
                 tabContents.forEach(content => {
@@ -1284,6 +1333,23 @@
                 document.getElementById(tabId).classList.remove('hidden');
             });
         });
+
+        // Handle resize events to update active tab styling
+        window.addEventListener('resize', () => {
+            const isMobile = window.innerWidth < 768;
+            const activeButton = document.querySelector('.tab-button.active');
+
+            if (activeButton) {
+                if (isMobile) {
+                    activeButton.classList.remove('text-accent-500', 'border-b-2', 'border-primary-500');
+                    activeButton.classList.add('bg-accent-500', 'text-white');
+                } else {
+                    activeButton.classList.remove('bg-accent-500', 'text-white');
+                    activeButton.classList.add('text-accent-500', 'border-b-2', 'border-primary-500');
+                }
+            }
+        });
+
     </script>
 
     <script>
@@ -1809,7 +1875,6 @@
         })();
 
     </script>
-
 
 
 </body>
