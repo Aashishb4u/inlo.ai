@@ -1286,46 +1286,7 @@
         });
     </script>
 
-    <script>
-        function validateAndSubmit(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById('emailInput');
-            const emailError = document.getElementById('emailError');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            // Reset styles
-            emailInput.style.borderColor = '';
-            emailError.classList.add('hidden');
-
-            if (!emailInput.value) {
-                // Empty email
-                emailInput.style.borderColor = '#EF4444'; // Tailwind red-500
-                emailError.textContent = 'Please enter your email address';
-                emailError.classList.remove('hidden');
-                emailInput.focus();
-                return;
-            }
-
-            if (!emailRegex.test(emailInput.value)) {
-                // Invalid email format
-                emailInput.style.borderColor = '#EF4444';
-                emailError.textContent = 'Please enter a valid email address';
-                emailError.classList.remove('hidden');
-                emailInput.focus();
-                return;
-            }
-
-            // If validation passes, redirect to the signup page
-            window.location.href = 'https://app.inlo.ai/';
-        }
-
-        // Add real-time validation
-        document.getElementById('emailInput').addEventListener('input', function () {
-            const emailError = document.getElementById('emailError');
-            this.style.borderColor = '';
-            emailError.classList.add('hidden');
-        });
-    </script>
 
 
 
