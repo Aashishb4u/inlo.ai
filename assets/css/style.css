@@ -412,7 +412,6 @@
 
     #_form_5_ ._form_element {
         margin: 0 0 20px;
-        padding: 0;
         width: 100%
     }
 
@@ -477,10 +476,6 @@
         vertical-align: baseline
     }
 
-    #_form_5_ button[type="submit"] {
-        padding: 20px;
-        font-size: 1.5em
-    }
 
     #_form_5_ ._inline-style {
         margin: 20px 0 0 !important
