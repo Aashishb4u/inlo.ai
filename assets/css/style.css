@@ -1,7 +1,6 @@
 #_form_5_ {
     font-size: 14px;
     line-height: 1.6;
-    font-family: arial, helvetica, sans-serif;
     margin: 0
 }
 
@@ -197,7 +196,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: inherit
 }
 
 #_form_5_ ._field-wrapper {
@@ -296,7 +294,6 @@
     background-repeat: no-repeat;
     background-position: 12px center;
     font-size: 14px;
-    font-family: arial, sans-serif;
     font-weight: 600;
     line-height: 16px;
     color: #000;
@@ -556,14 +553,8 @@
     min-width: 100%
 }
 
-#_form_5_._inline-form,
-#_form_5_._inline-form ._form-content {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif
-}
-
 #_form_5_._inline-form ._row span,
 #_form_5_._inline-form ._row label {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.6em
@@ -574,7 +565,6 @@
 #_form_5__inlineform input[type="tel"],
 #_form_5__inlineform select,
 #_form_5__inlineform textarea:not(.g-recaptcha-response) {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-color: #000000;
@@ -584,13 +574,11 @@
 #_form_5_._inline-form ._html-code *:not(h1, h2, h3, h4, h5, h6),
 #_form_5_._inline-form .sms_consent_message,
 #_form_5_._inline-form ._form-thank-you {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif
 }
 
 #_form_5_._inline-form ._form-label,
 #_form_5_._inline-form ._form-emailidentifier,
 #_form_5_._inline-form ._form-checkbox-option-label {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.6em
@@ -613,7 +601,6 @@
 }
 
 #_form_5_._inline-form ._form-branding {
-    font-family: "IBM Plex Sans", Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 100;
     font-style: normal;
